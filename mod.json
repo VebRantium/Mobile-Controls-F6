@@ -1,11 +1,11 @@
 {
-	"name": "mobile_controls",
-	"displayName": "Mobile-Controls",
-	"author": "StoneSteel/MoltenSteel",
-	"description": "Mindustry mod that gives mobile users to opportunity use desktop controls.\nAuthor Discord: moltensteel",
+	"name": "mobile_controls_f6",
+	"displayName": "Mobile-Controls-F6",
+	"author": "StoneSteel/MoltenSteel/VebRantium",
+	"description": "Mindustry mod that gives mobile users opportunity to use F6.\nAuthor Discord: moltensteel, vrp_tw",
 	"version": "2.0.0",
 	"dependencies": [],
 	"minGameVersion": 136,
 	"hidden": true
-	"repo": "StoneSteel27/Mobile-Controls"
+	"repo": "VebRantium/Mobile-Controls-F6"
 }
