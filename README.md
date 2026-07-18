@@ -1,9 +1,5 @@
 # Mobile Controls
-Mindustry mod that gives mobile users to opportunity use desktop controls.
+Mindustry mod that gives mobile users opportunity to use F6
 
 ## Currently available features:
-- Pan
-- select all units
-- select all unit factories
-
-
+- F6
