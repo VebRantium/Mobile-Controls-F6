@@ -1,24 +1,24 @@
-var pan_activate = 0;
-var orgx = 0;
-var orgy = 0;
+var f6_activate = 0;
+orgx = 0;
+orgy = 0;
 var init = 1;
 
 
 
-function pan() {
-    pan_activate = !pan_activate;
-    if (pan_activate) {
-            Vars.ui.showInfoToast("Pan mode: [green]ON", 3); 
+function f6() {
+    f6_activate = !f6_activate;
+    if (f6_activate) {
+            Vars.ui.showInfoToast("F6 mode: [green]ON", 3); 
 	    orgx = Core.camera.position.x; 
 	    orgy = Core.camera.position.y;
 	    Vars.control.setInput(new DesktopInput());
 	    Core.settings.put("keyboard", true);
-            var key = Core.keybinds.get(Binding.pan).key.ordinal(); 
+            var key = Core.keybinds.get(Binding.toggleBlockStatus).key.ordinal(); 
 	    Reflect.get(Core.input.getKeyboard(), "pressed").add(key);
         }
         else {
-            Vars.ui.showInfoToast("Pan mode: [red]OFF", 3);
-            var key = Core.keybinds.get(Binding.pan).key.ordinal();
+            Vars.ui.showInfoToast("f6 mode: [red]OFF", 3);
+            var key = Core.keybinds.get(Binding.toggleBlockStatus).key.ordinal();
             Reflect.get(Core.input.getKeyboard(), "pressed").remove(key);
             Core.settings.put("keyboard", false);
             Core.camera.position.x = orgx;
