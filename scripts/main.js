@@ -52,7 +52,7 @@ function select_all_unit_factories() {
 	}
 }
 Events.on(ClientLoadEvent, e => {
-	if (Vars.mobile && init){
+	if (!Vars.mobile && init){
 		var select = Core.scene.find("mobile buttons");
 		var style = Styles.cleari;
 		select.button(Vars.ui.getIcon("diagonal"), style, pan).name("pan");
